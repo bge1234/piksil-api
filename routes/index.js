@@ -33,7 +33,7 @@ router.get('/api', function(req, res) {
     }, {
       url: "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjMgviv0cHLAhVlu4MKHay7D2UQjBwIBA&url=http%3A%2F%2Fpngimg.com%2Fupload%2Fbeer_PNG2346.png&psig=AFQjCNG67HE9Jfl5vQL8izh4a9djn37wsA&ust=1458094425737896"
     }], function(err, result) {
-      collection.find().pretty().toArray(function(err, docs) {
+      collection.find().toArray(function(err, docs) {
         db.close();
         res.json(docs);
       });
