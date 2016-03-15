@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
-var URL =  process.env.MONGOLAB_URI || 'mongodb://localhost/piksil-storage';
+var URL = process.env.MONGOLAB_URI || 'mongodb://localhost/piksil-storage';
 
 router.get('/', function(req, res) {
   res.redirect('/api')
